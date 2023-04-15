@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "legacy-wool",
+	"version": "${version}",
+	"name": "Legacy Wools",
+	"description": "Readds the old wools from Minecraft Classic and Pre 1.12!",
+	"authors": [
+		"DerpDerpling"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/DerpDerpling/LegacyWools"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/legacywool/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"derp.legacywool.LegacyWool"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
