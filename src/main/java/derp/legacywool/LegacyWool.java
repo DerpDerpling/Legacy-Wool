@@ -6,9 +6,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -21,6 +19,7 @@ public class LegacyWool implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("legacy-wool");
+	public static final String MOD_ID = "legacywool";
 	//classic wool
 	public static final Block CAPRI_CLOTH = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
 	public static final Block CHARTREUSE_CLOTH = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
@@ -58,8 +57,23 @@ public class LegacyWool implements ModInitializer {
 	public static final Block RED_WOOL = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
 	public static final Block WHITE_WOOL = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
 	public static final Block YELLOW_WOOL = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
-
-
+	//old carpet
+	public static final Block BLACK_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block BLUE_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block BROWN_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block CYAN_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block GRAY_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block GREEN_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block LIGHT_BLUE_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block LIGHT_GRAY_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block LIME_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block MAGENTA_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block ORANGE_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block PINK_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block PURPLE_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block RED_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block WHITE_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
+	public static final Block YELLOW_WOOL_CARPET = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL)));
 
 	@Override
 	public void onInitialize() {
@@ -84,6 +98,23 @@ public class LegacyWool implements ModInitializer {
 		Registry.register(Registries.BLOCK, new Identifier("legacywool", "red_wool"), RED_WOOL);
 		Registry.register(Registries.BLOCK, new Identifier("legacywool", "white_wool"), WHITE_WOOL);
 		Registry.register(Registries.BLOCK, new Identifier("legacywool", "yellow_wool"), YELLOW_WOOL);
+		//old wool carpet
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "black_wool_carpet"), BLACK_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "blue_wool_carpet"), BLUE_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "brown_wool_carpet"), BROWN_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "cyan_wool_carpet"), CYAN_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "gray_wool_carpet"), GRAY_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "green_wool_carpet"), GREEN_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "light_blue_wool_carpet"), LIGHT_BLUE_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "light_gray_wool_carpet"), LIGHT_GRAY_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "lime_wool_carpet"), LIME_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "magenta_wool_carpet"), MAGENTA_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "orange_wool_carpet"), ORANGE_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "pink_wool_carpet"), PINK_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "purple_wool_carpet"), PURPLE_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "red_wool_carpet"), RED_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "white_wool_carpet"), WHITE_WOOL_CARPET);
+		Registry.register(Registries.BLOCK, new Identifier("legacywool", "yellow_wool_carpet"), YELLOW_WOOL_CARPET);
 
 		//old items
 		Registry.register(Registries.ITEM, new Identifier("legacywool", "black_wool"),new BlockItem(BLACK_WOOL, new FabricItemSettings()));
@@ -102,6 +133,24 @@ public class LegacyWool implements ModInitializer {
 		Registry.register(Registries.ITEM, new Identifier("legacywool", "red_wool"),new BlockItem(RED_WOOL, new FabricItemSettings()));
 		Registry.register(Registries.ITEM, new Identifier("legacywool", "white_wool"),new BlockItem(WHITE_WOOL, new FabricItemSettings()));
 		Registry.register(Registries.ITEM, new Identifier("legacywool", "yellow_wool"),new BlockItem(YELLOW_WOOL, new FabricItemSettings()));
+		//old carpet items
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "black_wool_carpet"),new BlockItem(BLACK_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "blue_wool_carpet"),new BlockItem(BLUE_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "brown_wool_carpet"),new BlockItem(BROWN_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "cyan_wool_carpet"),new BlockItem(CYAN_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "gray_wool_carpet"),new BlockItem(GRAY_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "green_wool_carpet"),new BlockItem(GREEN_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "light_blue_wool_carpet"),new BlockItem(LIGHT_BLUE_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "light_gray_wool_carpet"),new BlockItem(LIGHT_GRAY_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "lime_wool_carpet"),new BlockItem(LIME_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "magenta_wool_carpet"),new BlockItem(MAGENTA_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "orange_wool_carpet"),new BlockItem(ORANGE_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "pink_wool_carpet"),new BlockItem(PINK_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "purple_wool_carpet"),new BlockItem(PURPLE_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "red_wool_carpet"),new BlockItem(RED_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "white_wool_carpet"),new BlockItem(WHITE_WOOL_CARPET, new FabricItemSettings()));
+		Registry.register(Registries.ITEM, new Identifier("legacywool", "yellow_wool_carpet"),new BlockItem(YELLOW_WOOL_CARPET, new FabricItemSettings()));
+		
 
 		//classic blocks
 		Registry.register(Registries.BLOCK, new Identifier("legacywool", "red_cloth"), RED_CLOTH);
@@ -145,7 +194,17 @@ public class LegacyWool implements ModInitializer {
 		Registry.register(Registries.ITEM, new Identifier("legacywool", "capri_cloth"),new BlockItem(CAPRI_CLOTH, new FabricItemSettings()));
 		Registry.register(Registries.ITEM, new Identifier("legacywool", "dark_gray_cloth"),new BlockItem(DARK_GRAY_CLOTH, new FabricItemSettings()));
 
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> content.addAfter(Items.PINK_WOOL, RED_CLOTH, ORANGE_CLOTH, YELLOW_CLOTH, CHARTREUSE_CLOTH, GREEN_CLOTH, SPRING_GREEN_CLOTH, CYAN_CLOTH, CAPRI_CLOTH, ULTRAMARINE_CLOTH, VIOLET_CLOTH, PURPLE_CLOTH, MAGENTA_CLOTH, ROSE_CLOTH, DARK_GRAY_CLOTH, LIGHT_GRAY_CLOTH, WHITE_CLOTH));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(content -> content.addAfter(Items.PINK_WOOL,
+				//classic
+				RED_CLOTH, ORANGE_CLOTH, YELLOW_CLOTH, CHARTREUSE_CLOTH, GREEN_CLOTH, SPRING_GREEN_CLOTH, CYAN_CLOTH,
+				CAPRI_CLOTH, ULTRAMARINE_CLOTH, VIOLET_CLOTH, PURPLE_CLOTH, MAGENTA_CLOTH, ROSE_CLOTH, DARK_GRAY_CLOTH,
+				LIGHT_GRAY_CLOTH, WHITE_CLOTH,
+				//old
+				WHITE_WOOL, LIGHT_GRAY_WOOL, GRAY_WOOL, BLACK_WOOL, BROWN_WOOL, RED_WOOL, ORANGE_WOOL, YELLOW_WOOL, LIME_WOOL,
+				GREEN_WOOL, CYAN_WOOL, LIGHT_BLUE_WOOL, BLUE_WOOL, PURPLE_WOOL, MAGENTA_WOOL, PINK_WOOL, WHITE_WOOL_CARPET, LIGHT_GRAY_WOOL_CARPET,
+				GRAY_WOOL_CARPET, BLACK_WOOL_CARPET, BROWN_WOOL_CARPET, RED_WOOL_CARPET, ORANGE_WOOL_CARPET, YELLOW_WOOL_CARPET, LIME_WOOL_CARPET,
+				GREEN_WOOL_CARPET, CYAN_WOOL_CARPET, LIGHT_BLUE_WOOL_CARPET, BLUE_WOOL_CARPET, PURPLE_WOOL_CARPET, MAGENTA_WOOL_CARPET,
+				PINK_WOOL_CARPET));
 	}
 }
 		

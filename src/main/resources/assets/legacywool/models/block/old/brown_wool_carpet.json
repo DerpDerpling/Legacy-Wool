@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/carpet",
+    "textures": {
+      "all": "legacywool:block/old/brown_wool"
+    }
+  }

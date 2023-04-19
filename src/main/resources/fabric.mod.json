@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"derp.legacywool.LegacyWool"
+		],
+		"fabric-datagen": [
+			"derp.legacywool.datagen.ModDataGeneration"
 		]
 	},
 	"depends": {
