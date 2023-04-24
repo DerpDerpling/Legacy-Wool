@@ -1,5 +1,7 @@
 {
-    "variants": {
-      "": { "model": "legacywool:block/classic/rose_cloth" }
+  "variants": {
+    "": {
+      "model": "legacywool:block/rose_cloth"
     }
+  }
 }

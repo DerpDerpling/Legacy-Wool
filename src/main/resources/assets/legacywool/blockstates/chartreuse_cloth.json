@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "legacywool:block/classic/chartreuse_cloth" }
+    "": {
+      "model": "legacywool:block/chartreuse_cloth"
+    }
   }
 }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-      "": { "model": "legacywool:block/classic/capri_cloth" }
+  "variants": {
+    "": {
+      "model": "legacywool:block/capri_cloth"
     }
+  }
 }

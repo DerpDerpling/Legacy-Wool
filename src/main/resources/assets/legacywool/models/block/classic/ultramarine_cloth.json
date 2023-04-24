@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-      "all": "legacywool:block/classic/ultramarine_cloth"
-    }
-  }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-      "": { "model": "legacywool:block/classic/magenta_cloth" }
+  "variants": {
+    "": {
+      "model": "legacywool:block/magenta_cloth"
     }
+  }
 }

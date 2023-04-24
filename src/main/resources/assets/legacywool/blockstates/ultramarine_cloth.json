@@ -1,5 +1,7 @@
 {
-    "variants": {
-      "": { "model": "legacywool:block/classic/ultramarine_cloth" }
+  "variants": {
+    "": {
+      "model": "legacywool:block/ultramarine_cloth"
     }
+  }
 }

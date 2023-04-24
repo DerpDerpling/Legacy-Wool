@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "legacywool:block/old/purple_wool_carpet" }
+    "": {
+      "model": "legacywool:block/purple_wool_carpet"
+    }
   }
 }
