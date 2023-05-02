@@ -40,6 +40,7 @@ private static Item registerBlockItem (String name, Block block) {
     public static final Block VIOLET_CLOTH = registerBlock("violet_cloth", new Block (FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL))));
     public static final Block WHITE_CLOTH = registerBlock("white_cloth", new Block (FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL))));
     public static final Block YELLOW_CLOTH = registerBlock("yellow_cloth", new Block (FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL))));
+    public static final Block WOOL_CONVERTER = registerBlock("wool_converter", new Block (FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL))));
 
     public static final Block CAPRI_CLOTH_CARPET = registerBlock("capri_cloth_carpet", new CarpetBlock (FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL))));
     public static final Block CHARTREUSE_CLOTH_CARPET = registerBlock("chartreuse_cloth_carpet", new CarpetBlock(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds((BlockSoundGroup.WOOL))));

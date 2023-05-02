@@ -1,6 +1,8 @@
 package derp.legacywool;
 
 import derp.legacywool.block.ModBlocks;
+import derp.legacywool.block.entity.ModBlockEntities;
+import derp.legacywool.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroups;
@@ -25,6 +27,8 @@ public class LegacyWool implements ModInitializer {
 		// Proceed with mild caution.
 		LOGGER.info("Hello Fabric world!");
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntites();
+		ModScreenHandlers.registerAllScreenHandlers();
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(content -> content.addAfter(Items.PINK_CARPET,
 				//classic
